@@ -2,7 +2,10 @@ $.getScript('//code.jquery.com/jquery-3.3.1.min.js', function()
 {
     $( document ).ready( function() {
         //스크롤
-        $( window ).scroll( function() {
+        //새로고침할때 맨위로
+        $(window).bind('unload', function(){window.scrollTo({top:0});});
+        $( window ).scroll( scrollMove );
+        function scrollMove() {
             if ( $( this ).scrollTop() > 400 ) {
                 $( '.top' ).fadeIn();
             } else {
@@ -37,11 +40,12 @@ $.getScript('//code.jquery.com/jquery-3.3.1.min.js', function()
             if ( $( this ).scrollTop() > 2750 ){
                 $( '.img3_text' ).fadeIn(1000);
             }
-        } );
-        
+        }
+
+
         //화살표 클릭
         $( '.top' ).click( function() {
-            $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+            $( 'html, body' ).animate( { scrollTop : 0 }, 800 );
             return false;
         } );
     
@@ -51,7 +55,7 @@ $.getScript('//code.jquery.com/jquery-3.3.1.min.js', function()
     
     
         //폰트사이즈
-    
+        
         textfit();
         
         function textfit() {

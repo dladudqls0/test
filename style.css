@@ -66,14 +66,14 @@ nav a:nth-child(n+5){
     display: none;
     position: relative;
     width:90%;
-    height:600px;
+    height:570px;
     margin:0px auto;
     overflow: hidden;
 }
 
 .img1_container img {
     width:100%;
-    height:600px;
+    height:570px;
     object-fit: cover;
     vertical-align: middle;
 }
@@ -91,7 +91,7 @@ nav a:nth-child(n+5){
 
 .background{
     position:absolute; 
-    background-color: #f6f6f6; 
+    background-color: #fcf4f4; 
     width:60%;
     height: 2000px; 
     display: none; 
