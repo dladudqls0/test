@@ -1,5 +1,4 @@
-$.getScript('//code.jquery.com/jquery-3.3.1.min.js', function()
-{
+
     $( document ).ready( function() {
         //스크롤
         //새로고침할때 맨위로
@@ -72,5 +71,5 @@ $.getScript('//code.jquery.com/jquery-3.3.1.min.js', function()
         }
         $(window).on('resize', textfit);
     } );
-});
+
 
