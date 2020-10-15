@@ -6,7 +6,11 @@
         $( window ).scroll( scrollMove );
         function scrollMove() {
             //top이동
-            window.scrollTo({left:0});
+            
+            if ( $( this ).scrollLeft() > 0 ) {
+                window.scrollTo({left:0});
+            }
+            
             if ( $( this ).scrollTop() > 400 ) {
                 $( '.top' ).fadeIn();
             } else {
