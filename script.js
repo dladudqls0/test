@@ -7,10 +7,10 @@
         function scrollMove() {
             //top이동
             
-            if ( $( this ).scrollLeft() > 0 ) {
-                window.scrollTo({left:0});
+            if ( $( this ).scrollLeft() > 10 ) {
+                $( 'window' ).animate( { scrollLeft : 0 }, 800 );
             }
-            
+
             if ( $( this ).scrollTop() > 400 ) {
                 $( '.top' ).fadeIn();
             } else {
