@@ -7,8 +7,8 @@
         function scrollMove() {
             //top이동
             
-            if ( $( this ).scrollLeft() > 100 ) {
-                $('html, body').animate( { scrollLeft : 0 }, 800 );
+            if ( $( this ).scrollLeft() > 50 ) {
+                window.scrollTo({left:0});
             }
 
             if ( $( this ).scrollTop() > 400 ) {
