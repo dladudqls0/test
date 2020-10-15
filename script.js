@@ -7,7 +7,7 @@
         function scrollMove() {
             //top이동
             
-            if ( $( this ).scrollLeft() > 50 ) {
+            if ( $( this ).scrollLeft() > 0 ) {
                 window.scrollTo({left:0});
             }
 
