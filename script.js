@@ -8,7 +8,7 @@
             //top이동
             
             if ( $( this ).scrollLeft() > 10 ) {
-                $( 'window' ).animate( { scrollLeft : 0 }, 800 );
+                $(window).animate( { scrollLeft : 0 }, 800 );
             }
 
             if ( $( this ).scrollTop() > 400 ) {
