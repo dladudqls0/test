@@ -179,7 +179,7 @@ html{
 .img3_image{
     transform:translate(-50%,0%);
     top: 80px;
-    left: 52%;
+    left: 55%;
     width: 500px;
     position: absolute;
     z-index: 5;
@@ -187,7 +187,7 @@ html{
 .img3_text {
     transform:translate(-50%,0%);
     top: 0px;
-    left: 50%;
+    left: 52%;
     z-index: 6;
     position: absolute;
     font-size : 40px;
