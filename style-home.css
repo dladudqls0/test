@@ -84,6 +84,7 @@ html{
     height:220px; 
     position: relative;
     display:none;
+    overflow-x:hidden;
 }
 .content3-member-container div{
     background-color:white;
