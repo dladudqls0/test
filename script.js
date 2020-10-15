@@ -149,7 +149,7 @@
                 $('.text-fitter1').css('font-size','25px');
                 $('.text-fitter2').css('font-size','16px');
                 $('.img1_text').css('font-size','28px');
-                $('.img2_text').css('font-size','21px');
+                $('.img2_text').css('font-size','20px');
                 $('.img2_text').css('bottom','450px');
                 $('.img3_text').css('font-size','28px');
                 $('.text').css('margin','50px 20px 0px 40px');
