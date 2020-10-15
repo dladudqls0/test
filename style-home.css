@@ -177,9 +177,9 @@ html{
     height: 200px;
 }
 .img3_image{
-    transform:translate(-45%,0%);
+    transform:translate(-40%,0%);
     top: 80px;
-    left: 53%;
+    left: 50%;
     width: 500px;
     position: absolute;
     z-index: 5;
