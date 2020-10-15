@@ -198,3 +198,22 @@ body {
 
 
 
+.switch{
+    position:fixed; 
+    text-align: center;
+    z-index: 997;
+    width:15px;
+    right:2%; 
+    bottom:50%;
+}
+
+
+.switch div{
+    cursor:pointer;
+    border-radius: 70%;
+    background-color: white;
+    margin-top:10px;
+    width: 9px;
+    height : 9px;
+    border : 1.5px solid #e05247;
+}

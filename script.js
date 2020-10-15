@@ -18,23 +18,23 @@
                 $( '.background' ).slideDown(1500);
             }
             if( $( this ).scrollTop() >= 250 && $( this ).scrollTop() < 920 ){
-                $( '.switch1' ).html("●");
-                $( '.switch2' ).html("◯");
-                $( '.switch3' ).html("◯");
+                $( '.switch1' ).css('background-color', '#e05247');
+                $( '.switch2' ).css('background-color', 'white');
+                $( '.switch3' ).css('background-color', 'white');
                 $( '.text1' ).slideDown(1000);
                 $( '.contentImg1' ).fadeIn(1000);
             }
             else if( $( this ).scrollTop() >= 920 && $( this ).scrollTop() < 1600 ){
-                $( '.switch1' ).html("◯");
-                $( '.switch2' ).html("●");
-                $( '.switch3' ).html("◯");
+                $( '.switch1' ).css('background-color', 'white');
+                $( '.switch2' ).css('background-color', '#e05247');
+                $( '.switch3' ).css('background-color', 'white');
                 $( '.text2' ).slideDown(1000);
                 $( '.contentImg2' ).fadeIn(1000);
             }
             else if( $( this ).scrollTop() >= 1600 && $( this ).scrollTop() < 2490 ){
-                $( '.switch1' ).html("◯");
-                $( '.switch2' ).html("◯");
-                $( '.switch3' ).html("●");
+                $( '.switch1' ).css('background-color', 'white');
+                $( '.switch2' ).css('background-color', 'white');
+                $( '.switch3' ).css('background-color', '#e05247');
                 $( '.text3' ).slideDown(500);
                 $( '.content3-member-container' ).fadeIn(1500);
                 $( '.content3-button-container' ).fadeIn(1500);
@@ -50,14 +50,14 @@
                 $( '.img2_background' ).animate({
                     width: '100%'
                 });
-                $( '.switch1' ).html("◯");
-                $( '.switch2' ).html("◯");
-                $( '.switch3' ).html("◯");
+                $( '.switch1' ).css('background-color', 'white');
+                $( '.switch2' ).css('background-color', 'white');
+                $( '.switch3' ).css('background-color', 'white');
             }
             else{
-                $( '.switch1' ).html("◯");
-                $( '.switch2' ).html("◯");
-                $( '.switch3' ).html("◯");
+                $( '.switch1' ).css('background-color', 'white');
+                $( '.switch2' ).css('background-color', 'white');
+                $( '.switch3' ).css('background-color', 'white');
             }
 
             if ( $( this ).scrollTop() > 2800 ){
