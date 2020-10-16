@@ -45,14 +45,29 @@
         <form action="" method="POST">
             <input name="username" type="text" placeholder="ID"><br>
             <input name="password" type="password" placeholder="PASSWORD"><br>
-            <input type="submit" value="LOGIN">
+            <br>
+            <select name="service_place" id="status">
+                <option value="수원">수원</option>
+                <option value="서울">서울</option>
+                <option value="인천">인천</option>
+                <option value="광주">광주</option>
+            </select><br>
+            <input name="nickname" type="text" placeholder="닉네임"><br>
+            <input type="file" class="form-control" id="profile_image" name="profile_image" multiple><br>
+            <input type="submit" value="회원가입">
         </form>
     
-        <div>아직 멍팟의 회원이 아니신가요? 함께해요 멍!</div>  
-        <a href="signup.html">회원가입하러가기</a>
+        <div>이미 아이디가 있으신가요?</div>  
+        <a href="login.html">로그인하러가기</a>
     </section>
+
+
+
+
+
+
     <footer>
-        <div class="footer" style="width:2000px;">
+        <div class="footer" style="width:2000px; top:1000px;">
             <div class="footerInfo1">
                 <a href="https://www.lotteglogis.com/home/policy/privacy" target="_blank"><strong>개인정보처리방침</strong></a>
                 <a href="https://www.lotteglogis.com/home/policy/video" target="_blank">영상정보기기운영/관리방침</a>
