@@ -1,6 +1,6 @@
 .login{
     text-align: center;
-    padding: 50px;
+    padding: 50px 0px;
     margin-top: 30px;
 }
 
@@ -9,7 +9,7 @@
     height: 50px;
     padding: 10px;
     border-radius: 10px;
-    margin: 5px;
+    margin: 5px 0px;
     border: 1px solid #f0f0f0;
 }
 
@@ -18,8 +18,7 @@
     height: 50px;
     padding: 10px;
     border-radius: 10px;
-    margin: 5px;
-    margin-bottom: 30px;
+    margin: 5px 0px 30px;
     border: 1px solid #f0f0f0;
 }
 
@@ -56,53 +55,4 @@
 .login img {
     width: 120px;
     margin: 10px;
-}
-
-.signup {
-    text-align: center;
-    width: 425px;
-    margin-top: 50px;
-}
-
-.signup input{
-    height: 50px;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.signup input[type=file]{
-    display: inline;
-}
-
-.signup input[type=submit]{
-    font-weight: 900;
-    color: #28daaf;
-    background-color: #fbfbfb;
-    margin-bottom: 30px;
-    border: 1px solid #f0f0f0;
-}
-
-.signup section{
-    margin: 0 auto;
-    font-size: 20px;
-    color: #28daaf;
-    display: block;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    clear: both;
-}
-
-.signup img {
-    width: 120px;
-}
-
-.signup input[type=number]{
-    border: 1px solid #d1d1d1;
-    width: 100px;
-}
-
-.signup input[type=radio]{
-    margin: 0;
-    height: 18px;
 }
