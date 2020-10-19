@@ -125,6 +125,7 @@
             return false;
         } );
 
+
     
         //처음 이미지
         $( '.img1_container' ).fadeIn(1500);
