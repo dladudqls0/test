@@ -9,8 +9,8 @@
     <link rel="stylesheet" type="text/css" href="style-home.css">
     <link rel="stylesheet" type="text/css" href="style-members.css">
     <link rel="stylesheet" type="text/css" href="style-mypage.css">
-    <link rel="stylesheet" type="text/css" href="style-place.css">
     <link rel="stylesheet" type="text/css" href="style-sign.css">
+    <link rel="stylesheet" type="text/css" href="style-place.css">
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="script.js" type="text/javascript"></script>
     <script src="script-place.js" type="text/javascript"></script>
@@ -48,22 +48,19 @@
     <section>
 
 
+
+        <div class="now_page" style="display:none;">signin</div>
         <section class="login">
             <img src="img/logo.png" alt="logo">
-            <form action="" method="POST" enctype="multipart/form-data">
-                <input name="username" type="text" minlength="11" maxlength="11" placeholder="전화번호 11자리 ('-' 제외)" required><br>
-                <input name="password" type="password" minlength="8" maxlength="14" placeholder="비밀번호 (8자리 이상)" required><br>
-                <input name="service_place" id="status" class="passValue" value="" style="visibility: hidden; width:0px; height:0px;"><br>
-                <input name="nickname" type="text" placeholder="이름" maxlength="5"><br>
-                <div class="signup_place_search"><span>지역검색</span><img src="img/search.png"></div><br>
-                <input type="file" class="form-control" id="profile_image" name="profile_image" multiple><br>
-                <input type="submit" value="회원가입"><br>
+            <form action="" method="POST">
+                <input name="username" type="text" placeholder="전화번호" required><br>
+                <input name="password" type="password" placeholder="비밀번호" required><br>
+                <input type="submit" value="LOGIN">
             </form>
-            <div>이미 아이디가 있으신가요?</div>  
-            <a href="signin.html">로그인</a>
-    </section>
         
-
+            <div>아직 롯데 가온의 회원이 아니신가요? 함께해요!</div>  
+            <a href="signup.html">회원가입</a>
+        </section>
 
 
 

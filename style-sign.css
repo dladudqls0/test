@@ -1,6 +1,6 @@
 .login{
     text-align: center;
-    padding: 50px;
+    padding: 50px 0px;
     margin-top: 30px;
 }
 
@@ -9,20 +9,34 @@
     height: 50px;
     padding: 10px;
     border-radius: 10px;
-    margin: 5px;
+    margin: 5px 0px;
+    border: 1px solid #f0f0f0;
+}
+
+.login select {
+    width: 375px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0px 30px;
     border: 1px solid #f0f0f0;
 }
 
 .login input[type=submit]{
     font-weight: 900;
-    color: #28daaf;
-    background-color: #fbfbfb;
+    color: #ffffff;
+    background-color: #e05247;
     margin-bottom: 30px;
     border: 1px solid #f0f0f0;
+    cursor: pointer;
+}
+
+.login input[type=submit]:hover{
+    background-color: #ff5247;
 }
 
 .login div, a{
-    color: #28daaf;
+    color: #e05247;
     text-decoration: none;
     margin: 5px;
 }
@@ -30,12 +44,12 @@
 .login a {
     font-weight: 900;
     font-size: 18px;
-    color: #28daaf;
+    color: #e05247;
 }
 
 .login a:hover{
     text-decoration: none;
-    color: #c6d1ce;
+    color: #ff5247;
 }
 
 .login img {
@@ -43,50 +57,170 @@
     margin: 10px;
 }
 
-.signup {
-    width: 425px;
-    margin-top: 50px;
-}
-
-.signup input{
+.signup_place_search{
+    display:inline-block;
+    width: 350px;
     height: 50px;
     padding: 10px;
+    position: relative;
     border-radius: 10px;
-}
-
-.signup input[type=file]{
-    display: inline;
-}
-
-.signup input[type=submit]{
-    font-weight: 900;
-    color: #28daaf;
-    background-color: #fbfbfb;
-    margin-bottom: 30px;
     border: 1px solid #f0f0f0;
+    margin: 5px 0px;
+    color:rgb(175, 175, 175);
 }
 
-.signup section{
-    margin: 0 auto;
-    font-size: 20px;
-    color: #28daaf;
-    display: block;
-    width: 100%;
-    height: auto;
+.signup_place_search img{
+    position: absolute;
+    width:10px;
+    transform:translate(-50%,-50%);
+    top:40%;
+    right:5%;
+}
+.signup_place_search span{
+    position: absolute;
+    transform:translate(0%,-50%);
+    top:50%;
+    left:3%;
+    font-size: 13px;
+    color:#8b8b8b;
+}
+
+
+
+
+
+
+
+.background-place{
+    display:none;
+    position:fixed;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.61);
+    z-index: 1005;
+    top:0;
+}
+.background-place-close{
+    position: absolute;
+    border-radius: 5px;
+    background-color: #e05247;
+    font-size: 12px;
+    bottom: 5%;
+    right:5%;
+    color:white;
+    cursor: pointer;
+    padding:5px;
+}
+.background-place-close:hover{
+    background-color: #ff5247;
+}
+
+.background-place-container{
+    display:block;
+    position: absolute;
+    border-radius: 10px;
+    transform:translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    width:350px;
+    height:500px;
+    background-color: white;
+}
+.background-place-h1{
+    width:90%;
+    padding:10px; 
+    border-bottom: 1px solid #e05247; 
+    color:#e05247; 
+    margin:0 auto;
     text-align: center;
-    clear: both;
 }
 
-.signup img {
-    width: 120px;
+.triangle1{
+    line-height: 20px;
+    cursor: pointer;
+    float:right;
+    padding-right:8px;
+    font-size:8px;
+}
+.triangle2{
+    line-height: 20px;
+    cursor: pointer;
+    float:right;
+    padding-right:8px;
+    font-size:8px;
 }
 
-.signup input[type=number]{
-    border: 1px solid #d1d1d1;
-    width: 100px;
+.background-place-alert{
+    display:none;
+    color:#ff5247;
+    font-size:9px;
+    position: absolute;
+    bottom:10%;
+    transform:translate(-50%,-50%);
+    left:50%;
 }
 
-.signup input[type=radio]{
-    margin: 0;
-    height: 18px;
+
+.background-place-content{
+    position: relative;
+    display: inline-block;
+    width:40%;
+    padding-left: 5px;
+    font-size: 12px;
+    margin:10px 3% 0px 4%;
+    height:26px;
+    border-bottom: 0.5px solid #f0f0f0;
+}
+
+.background-place-2{
+    color:#c0c0c0;
+}
+
+.background-place-container2{
+    z-index:1050;
+    display:none;
+    position: absolute;
+    top:26px;
+    left:-3px;
+    width:330px;
+    height:330px;
+    background-color: #fdf9f9;
+}
+
+.background-place-content2{
+    position: static;
+    display: block;
+    width:40%;
+    padding-left: 5px;
+    font-size: 12px;
+    margin:10px 3% 0px 4%;
+    height:26px;
+    border-bottom: 0.5px solid #f0f0f0;
+}
+
+.background-place-container3{
+    z-index:1051;
+    display:none;
+    position: absolute;
+    top:0px;
+    left:160px;
+    width:170px;
+    height:330px;
+    background-color: #fcf4f4;
+}
+
+.background-place-content3{
+    position: static;
+    display: block;
+    width:90%;
+    padding-left: 5px;
+    font-size: 12px;
+    margin:10px 3% 0px 4%;
+    height:26px;
+    border-bottom: 0.5px solid #f0f0f0; 
+    cursor:pointer;
+}
+
+.background-place-content3:hover{
+    color:#e05247;
 }

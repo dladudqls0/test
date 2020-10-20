@@ -9,8 +9,8 @@
     <link rel="stylesheet" type="text/css" href="style-home.css">
     <link rel="stylesheet" type="text/css" href="style-members.css">
     <link rel="stylesheet" type="text/css" href="style-mypage.css">
-    <link rel="stylesheet" type="text/css" href="style-place.css">
     <link rel="stylesheet" type="text/css" href="style-sign.css">
+    <link rel="stylesheet" type="text/css" href="style-place.css">
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="script.js" type="text/javascript"></script>
     <script src="script-place.js" type="text/javascript"></script>
@@ -45,24 +45,30 @@
 
 
     
-    <section>
+<section>
 
 
-        <section class="login">
-            <img src="img/logo.png" alt="logo">
-            <form action="" method="POST" enctype="multipart/form-data">
-                <input name="username" type="text" minlength="11" maxlength="11" placeholder="전화번호 11자리 ('-' 제외)" required><br>
-                <input name="password" type="password" minlength="8" maxlength="14" placeholder="비밀번호 (8자리 이상)" required><br>
-                <input name="service_place" id="status" class="passValue" value="" style="visibility: hidden; width:0px; height:0px;"><br>
-                <input name="nickname" type="text" placeholder="이름" maxlength="5"><br>
-                <div class="signup_place_search"><span>지역검색</span><img src="img/search.png"></div><br>
-                <input type="file" class="form-control" id="profile_image" name="profile_image" multiple><br>
-                <input type="submit" value="회원가입"><br>
-            </form>
-            <div>이미 아이디가 있으신가요?</div>  
-            <a href="signin.html">로그인</a>
-    </section>
-        
+    <div class="now_page" style="display:none;">mypage</div>
+    <div class="container">
+        <div class="information-image" class="profile ">
+            <img src="img/people/people4.png">
+        </div>
+        <br>
+        <div class="information">
+            번호 : <strong>01043219876</strong><br>
+            이름 : <strong>이준성</strong>(76)<br>
+            지역 : <strong>서울시 강남구 신도브래뉴</strong><br>
+        </div>
+        <a href="#" class="btn"><div class="information-button">수정하기</div></a>
+    </div>
+    <div class="container2">
+        <h2>택배 이력</h2><br>
+        <div class="container3">5 &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;운송장번호 : 2323567123123  &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;배송상태 : 배송완료 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 완료날짜 : 2020.10.15 </div>
+        <div class="container3">4 &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;운송장번호 : 2323127823123  &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;배송상태 : 배송완료 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 완료날짜 : 2020.10.14 </div>
+        <div class="container3">3 &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;운송장번호 : 2323112397823  &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;배송상태 : 배송완료 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 완료날짜 : 2020.10.11 </div>
+        <div class="container3">2 &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;운송장번호 : 2308723123123  &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;배송상태 : 배송완료 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 완료날짜 : 2020.09.28 </div>
+        <div class="container3">1 &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;운송장번호 : 2323123123123  &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;배송상태 : 배송완료 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 완료날짜 : 2020.09.21 </div>
+    </div>
 
 
 
