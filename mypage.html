@@ -5,101 +5,113 @@
     <meta content="yes" name="apple-mobile-web-app-capable" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>롯데가온</title>
-    <!-- {% load static %} -->
-    <link rel="shortcut icon" href="img/logo.png"/>
-    <link rel="stylesheet" href="style-home.css" type="text/css">
-    <link rel="stylesheet" href="style-base.css" type="text/css">
-    <link rel="stylesheet" href="style-sign.css" type="text/css">
-    <link rel="stylesheet" href="style-mypage.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style-base.css">
+    <link rel="stylesheet" type="text/css" href="style-home.css">
+    <link rel="stylesheet" type="text/css" href="style-members.css">
+    <link rel="stylesheet" type="text/css" href="style-mypage.css">
+    <link rel="stylesheet" type="text/css" href="style-sign.css">
+    <link rel="stylesheet" type="text/css" href="style-place.css">
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="script.js" type="text/javascript"></script>
+    <script src="script-place.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="img/logo.ico"/>
 </head>
 
 <body>
     <div class="background-nav">
         <div class="background-nav-link">
-            <a href="index.html">서비스</a><br><br>
-            <a href="place.html">가능지역</a><br><br>
-            <a href="members.html">구성원</a><br><br><br>
-            <a href = "login.html">로그인</a><br><br>
-            <a href = "signup.html">회원가입</a>
+            <a href="home.html" class="home_page">서비스</a><br><br>
+            <a href="place.html" class="place_page">가능지역</a><br><br>
+            <a href="members.html" class="members_page">구성원</a><br><br><br>
+            <a href = "mypage.html" class="signup_page">마이페이지</a><br><br>
+            <a href = "#" class="signin_page">로그아웃</a>
+            <!-- <a href = "signin.html" class="signin_page">로그인</a><br><br>
+            <a href = "signup.html" class="signup_page">회원가입</a> -->
         </div>
     </div>
     <nav>
         <div id="nav_container">
-            <a href="index.html"><img src="img/mainLogo.png"></a>
-            <a href="index.html" class="nav-link">서비스</a>
-            <a href="place.html" class="nav-link">가능지역</a>
-            <a href="members.html" class="nav-link">구성원</a>
-            <a href = "signup.html" class="nav-link">회원가입</a>
-            <a href = "login.html" class="nav-link">로그인</a>
+            <a href="home.html"><img src="img/mainLogo.png"></a>
+            <a href="home.html" class="nav-link home_page">서비스</a>
+            <a href="place.html" class="nav-link place_page">가능지역</a>
+            <a href="members.html" class="nav-link members_page">구성원</a>
+            <a href = "#" class="nav-link signup_page">로그아웃</a>
+            <a href = "mypage.html" class="nav-link signin_page">마이페이지</a>
+            <!-- <a href = "signup.html" class="nav-link signup_page">회원가입</a>
+            <a href = "signin.html" class="nav-link signin_page">로그인</a> -->
         </div>
     </nav> 
     
 
 
     
-    <section>
-        <!-- {% block content %}
-        {% endblock %} -->
-        <div class="container">
-            <div class="information-image" class="profile "><img src="img/profile.png" style="width:100%; height:100%;"></div>
-            <br>
-            <div class="information">
-                아이디 : <strong>hello</strong><br>
-                이름 : <strong>홍길동</strong><br>
-                지역 : <strong>수원</strong><br>
-            </div>
-            <div class="information-button">수정하기</div>
-        </div>
-        <div class="container2">
-            <h2>택배 이력</h2><br>
-            <div class="container3">5 &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;운송장번호 : 2323567123123  &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;배송상태 : 배송완료 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 완료날짜 : 2020.10.15 </div>
-            <div class="container3">4 &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;운송장번호 : 2323127823123  &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;배송상태 : 배송완료 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 완료날짜 : 2020.10.14 </div>
-            <div class="container3">3 &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;운송장번호 : 2323112397823  &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;배송상태 : 배송완료 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 완료날짜 : 2020.10.11 </div>
-            <div class="container3">2 &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;운송장번호 : 2308723123123  &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;배송상태 : 배송완료 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 완료날짜 : 2020.09.28 </div>
-            <div class="container3">1 &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;운송장번호 : 2323123123123  &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;배송상태 : 배송완료 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 완료날짜 : 2020.09.21 </div>
-        </div>
+<section>
 
-    <!-- 템플릿상속 -->
-    </section>
-    <footer>
-        <div class="footer" style="width:2000px; top:1000px;">
-            <div class="footerInfo1">
-                <a href="https://www.lotteglogis.com/home/policy/privacy" target="_blank"><strong>개인정보처리방침</strong></a>
-                <a href="https://www.lotteglogis.com/home/policy/video" target="_blank">영상정보기기운영/관리방침</a>
-                <a href="https://www.lotteglogis.com/home/policy/standard" target="_blank">택배표준약관</a>
-                <a href="https://www.lotteglogis.com/home/policy/safetyManagement" target="_blank">안전보건방침</a>
-                <a href="https://www.lotteglogis.com/home/policy/emailReject" target="_blank">이메일주소무단수집거부</a>
-                <div class="footerInfo1-div1"> 
-                    패밀리 사이트 <span class="footerInfo1-div-arrow1">▲</span>
-                    <div class="dropdown-content1">
-                        <a href="#">롯데 글로벌로지스</a>
-                        <a href="#">롯데 멤버스</a>
-                        <a href="#">롯데 GFR</a>
-                        <a href="#">FRL 코리아</a>
-                    </div>
-                </div>
-                <div class="footerInfo1-div2"> 
-                    부가 서비스 <span class="footerInfo1-div-arrow2">▲</span>
-                    <div class="dropdown-content2">
-                        <a href="http://tos.lottegl.com/if/user_check.jsp">의류B2B 설문조사</a>
-                        <a href="https://tos.lottegl.com/if/b2b/index.jsp">의류반품/점간이동</a>
-                        <a href="http://www.tradesign.net/ra/lotteglogis">공인인증센터</a>
-                        <a href="https://truck.llogis.com/portal/index.lgl">화물정보망</a>
-                    </div>
+
+    <div class="now_page" style="display:none;">mypage</div>
+    <div class="container">
+        <div class="information-image" class="profile ">
+            <img src="img/people/people4.png">
+        </div>
+        <br>
+        <div class="information">
+            번호 : <strong>01043219876</strong><br>
+            이름 : <strong>이준성</strong>(76)<br>
+            지역 : <strong>서울시 강남구 신도브래뉴</strong><br>
+        </div>
+        <a href="#" class="btn"><div class="information-button">수정하기</div></a>
+    </div>
+    <div class="container2">
+        <h2>택배 이력</h2><br>
+        <div class="container3">5 &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;운송장번호 : 2323567123123  &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;배송상태 : 배송완료 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 완료날짜 : 2020.10.15 </div>
+        <div class="container3">4 &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;운송장번호 : 2323127823123  &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;배송상태 : 배송완료 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 완료날짜 : 2020.10.14 </div>
+        <div class="container3">3 &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;운송장번호 : 2323112397823  &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;배송상태 : 배송완료 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 완료날짜 : 2020.10.11 </div>
+        <div class="container3">2 &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;운송장번호 : 2308723123123  &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;배송상태 : 배송완료 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 완료날짜 : 2020.09.28 </div>
+        <div class="container3">1 &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;운송장번호 : 2323123123123  &nbsp;&nbsp;&nbsp;|  &nbsp;&nbsp;&nbsp;배송상태 : 배송완료 &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 완료날짜 : 2020.09.21 </div>
+    </div>
+
+
+
+
+
+</section>
+<footer>
+    <div class="footer">
+        <div class="footerInfo1">
+            <a href="https://www.lotteglogis.com/home/policy/privacy" target="_blank"><strong>개인정보처리방침</strong></a>
+            <a href="https://www.lotteglogis.com/home/policy/video" target="_blank">영상정보기기운영/관리방침</a>
+            <a href="https://www.lotteglogis.com/home/policy/standard" target="_blank">택배표준약관</a>
+            <a href="https://www.lotteglogis.com/home/policy/safetyManagement" target="_blank">안전보건방침</a>
+            <a href="https://www.lotteglogis.com/home/policy/emailReject" target="_blank">이메일주소무단수집거부</a>
+            <div class="footerInfo1-div1"> 
+                패밀리 사이트 <span class="footerInfo1-div-arrow1">▲</span>
+                <div class="dropdown-content1">
+                    <a href="#">롯데 글로벌로지스</a>
+                    <a href="#">롯데 멤버스</a>
+                    <a href="#">롯데 GFR</a>
+                    <a href="#">FRL 코리아</a>
                 </div>
             </div>
-            <div class="footerInfo2">
-                <img src="img/footerLogo.png">
-                <div>
-                    서울시 중구 통일로 10(연세 세브란스 빌딩) 대표자 : 박찬복 택배고객센터 1588-2121 <br>
-                    사업자등록번호 : 102-81-23012 통신판매신고 : 제2017-서울중구-0433호 <br><br>
-                    <span>COPYRIGHT © 2019 LOTTE GLOBAL LOGISTICS CO,.LTD ALL RIGHTS RESERVED.</span>
+            <div class="footerInfo1-div2"> 
+                부가 서비스 <span class="footerInfo1-div-arrow2">▲</span>
+                <div class="dropdown-content2">
+                    <a href="http://tos.lottegl.com/if/user_check.jsp">의류B2B 설문조사</a>
+                    <a href="https://tos.lottegl.com/if/b2b/index.jsp">의류반품/점간이동</a>
+                    <a href="http://www.tradesign.net/ra/lotteglogis">공인인증센터</a>
+                    <a href="https://truck.llogis.com/portal/index.lgl">화물정보망</a>
                 </div>
             </div>
         </div>
-    </footer>
+        <div class="footerInfo2">
+            <img class="footerInfo2_img" src='img/footerLogo.png'>
+            <div class="footerInfo2_font">
+                서울시 중구 통일로 10(연세 세브란스 빌딩) 대표자 : 박찬복 택배고객센터 1588-2121 <br>
+                사업자등록번호 : 102-81-23012 통신판매신고 : 제2017-서울중구-0433호 <br><br>
+                <span>COPYRIGHT © 2019 LOTTE GLOBAL LOGISTICS CO,.LTD ALL RIGHTS RESERVED.</span>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
 <a href="#" class="nav-button">
@@ -109,4 +121,155 @@
         <div class="nav-button-slash3"></div>
     </div>
 </a>
-<a href="#" class="top"><div><img src="img/direction.png"></div></a>
+<a href="#" class="top"><div><img src='img/direction.png'></div></a>
+<div class="switch">
+    <div class="switch1"></div>
+    <div class="switch2"></div>
+    <div class="switch3"></div>
+</div>
+<div class="background-place">
+        
+    <div class="background-place-container">
+        <div class="background-place-h1"><strong>지역선택</strong></div>
+        <div class="background-place-content background-place-1">
+            서울 <span class="triangle1">▼</span>
+            <div class="background-place-container2" style="display: none;">
+                <div class="background-place-content2 background-place-1">
+                    강남구 <span class="triangle2">▶</span>
+                    <div class="background-place-container3" style="display: none;">
+                        <div class="background-place-content3" name="서울 강남구 신사동 래미안">
+                            신사동 래미안
+                        </div>
+                        <div class="background-place-content3" name="서울 강남구 압구정동 어울림">
+                            압구정동 어울림
+                        </div>
+                        <div class="background-place-content3" name="서울 강남구 대치동 더샵">
+                            대치동 더샵
+                        </div>
+                        <div class="background-place-content3" name="서울 강남구 논현동 신도브레뉴">
+                            논현동 신도브레뉴
+                        </div>
+                        <div class="background-place-content3" name="서울 강남구 일원동 중앙하이츠빌">
+                            일원동 중앙하이츠빌
+                        </div>
+                    </div>
+                </div>
+                <div class="background-place-content2 background-place-1">
+                    송파구 <span class="triangle2">▶</span>
+                    <div class="background-place-container3" style="display: none;">
+                        <div class="background-place-content3" name="서울 송파구 오륜동 미지엔">
+                            오륜동 미지엔
+                        </div>
+                        <div class="background-place-content3" name="서울 송파구 잠실2동 좋은집">
+                            잠실2동 좋은집
+                        </div>
+                        <div class="background-place-content3" name="서울 송파구 송파1동 꿈에그린">
+                            송파1동 꿈에그린
+                        </div>
+                    </div>
+                </div>
+                <div class="background-place-content2 background-place-1">
+                    강동구 <span class="triangle2">▶</span>
+                    <div class="background-place-container3" style="display: none;">
+                        <div class="background-place-content3" name="서울 강동구 천호1동 SKview">
+                            천호1동 SKview
+                        </div>
+                        <div class="background-place-content3" name="서울 강동구 강일동 Xi">
+                            강일동 Xi
+                        </div>
+                        <div class="background-place-content3" name="서울 강동구 상일동 몰라">
+                            상일동 몰라
+                        </div>
+                        <div class="background-place-content3" name="서울 강동구 암사2동 현진에버빌">
+                            암사2동 현진에버빌
+                        </div>
+                    </div>
+                </div>
+                <div class="background-place-content2 background-place-1">
+                    노원구 <span class="triangle2">▶</span>
+                    <div class="background-place-container3" style="display: none;">
+                        <div class="background-place-content3" name="서울 노원구 공릉1동 e편한세상">
+                            공릉1동 e편한세상
+                        </div>
+                        <div class="background-place-content3" name="서울 노원구 상계1동 미소지음">
+                            상계1동 미소지음
+                        </div>
+                        <div class="background-place-content3" name="서울 노원구 상계3.4동 래미안">
+                            상계3.4동 래미안
+                        </div>
+                        <div class="background-place-content3" name="서울 노원구 하계1동 중앙하이츠빌">
+                            하계1동 중앙하이츠빌
+                        </div>
+                    </div>
+                </div>
+                <div class="background-place-content2 background-place-1">
+                    용산구 <span class="triangle2">▶</span>
+                    <div class="background-place-container3" style="display: none;">
+                        <div class="background-place-content3" name="서울 용산구 남영동 경남아너스빌">
+                            남영동 경남아너스빌
+                        </div>
+                        <div class="background-place-content3" name="서울 용산구 용문동 꿈에그린">
+                            용문동 꿈에그린
+                        </div>
+                        <div class="background-place-content3" name="서울 용산구 이촌1동 아이파크">
+                            이촌1동 아이파크
+                        </div>
+                        <div class="background-place-content3" name="서울 용산구 서빙고동 e편한세상">
+                            서빙고동 e편한세상
+                        </div>
+                        <div class="background-place-content3" name="서울 용산구 남영동 더샵">
+                            남영동 더샵
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="background-place-content background-place-2">
+            경기 <span class="triangle1">▼</span>
+        </div>
+        <div class="background-place-content background-place-2">
+            인천 <span class="triangle1">▼</span>
+        </div>
+        <div class="background-place-content background-place-2">
+            강원 <span class="triangle1">▼</span>
+        </div>
+        <div class="background-place-content background-place-2">
+            제주 <span class="triangle1">▼</span>
+        </div>
+        <div class="background-place-content background-place-2">
+            대전 <span class="triangle1">▼</span>
+        </div>
+        <div class="background-place-content background-place-2">
+            충북 <span class="triangle1">▼</span>
+        </div>
+        <div class="background-place-content background-place-2">
+            충남/세종 <span class="triangle1">▼</span>
+        </div>
+        <div class="background-place-content background-place-2">
+            부산 <span class="triangle1">▼</span>
+        </div>
+        <div class="background-place-content background-place-2">
+            울산 <span class="triangle1">▼</span>
+        </div>
+        <div class="background-place-content background-place-2">
+            경남 <span class="triangle1">▼</span>
+        </div>
+        <div class="background-place-content background-place-2">
+            대구 <span class="triangle1">▼</span>
+        </div>
+        <div class="background-place-content background-place-2">
+            경북 <span class="triangle1">▼</span>
+        </div>
+        <div class="background-place-content background-place-2">
+            광주 <span class="triangle1">▼</span>
+        </div>
+        <div class="background-place-content background-place-2">
+            전남 <span class="triangle1">▼</span>
+        </div>
+        <div class="background-place-content background-place-2">
+            전주/전북 <span class="triangle1">▼</span>
+        </div>
+        <span class="background-place-alert">※ 아직 서비스 준비중인 지역입니다 ※</span>
+        <div class="background-place-close">close</div>
+    </div>
+</div>
