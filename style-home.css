@@ -39,7 +39,12 @@
     left: 50%;
 }
 
-
+.text-fitter1{
+    line-height: 35px;
+}
+.text-fitter2{
+    line-height: 24px;
+}
 .content{
     position: absolute;
     width : 100%;
