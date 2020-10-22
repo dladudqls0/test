@@ -24,6 +24,15 @@
             case 'members':
                 $( '.members_page' ).css('color', '#ec1d25');
                 $( '.footer' ).css('position', 'static');
+                var value= $( '.passValue' ).val();
+                if(value=='all'){
+                    value="지역검색";
+                    $( '.members_h2_box a' ).css('color', '#e05247');
+                }
+                else{
+                    $( '.signup_place_search span' ).css('color','black');
+                }
+                $( '.signup_place_search span' ).text(value);
                 break;
             case 'place':
                 $( '.place_page' ).css('color', '#ec1d25');
@@ -121,10 +130,14 @@
             if (width_size <= 510) {
                 $('.content3-member-container div').css('width',width_size-80+"px");
                 $('.members_card').css('width',width_size-80+"px");
+                $('.members_card div').css('width',"55%");
+                $('.content3-card-div').css('width',"55%");
             }
             else{
                 $('.content3-member-container div').css('width',"420px");
                 $('.members_card').css('width',"420px");
+                $('.members_card div').css('width',"60%");
+                $('.content3-card-div').css('width',"60%");
             }
             if (width_size >= 800) {
                 $('.footerInfo1').css('display','block');
@@ -132,18 +145,20 @@
                 $('.footerInfo2_img').css({'display':'inline-block', 'margin':'10px 40px 20px 80px'});
                 $('.footerInfo2_font').css({'font-size':'14px', 'margin' : '0px'});
                 $('.youtube1').css('width','88%');
-                $('.text-fitter1').css('font-size','32px');
-                $('.text-fitter2').css('font-size','21px');
+                $('.text-fitter0').css('font-size','25px');
+                $('.text-fitter1').css({'font-size':'32px','line-height':'50px'});
+                $('.text-fitter2').css({'font-size':'21px','line-height':'30px'});
                 $('.img1_text').css('font-size','40px');
                 $('.img2_text').css({'font-size':'30px','bottom':'560px'});
                 $('.img3_text').css('font-size','40px');
                 $('.membersImg_text').css('font-size','40px');
                 $('.placeImg_text').css('font-size','40px');
-                $('.text').css('margin','60px 30px 0px 50px');
+                $('.text').css('margin','30px 30px 0px 50px');
                 $('.img2').css('width','700px');
                 $('.place_card_container').css('text-align',"left");
-                $('.content2-cardbox').css('width',"60%");
-                $('.content2-subbox').css('display',"inline-block");
+                $('.content2-cardbox').css('width',"100%");
+                $('.content2-subbox').css('display',"none");
+                $('.members_h2_link').css({'width':"50%","text-align":"right"});
             }
             else {
                 $('.footerInfo1').css('display','none');
@@ -151,19 +166,21 @@
                 $('.footerInfo2_img').css({'display':'block', 'margin':'0 auto'});
                 $('.footerInfo2_font').css({'font-size':'10px', 'margin' : '20px 0px'});
                 $('.youtube1').css('width','100%');
-                $('.text-fitter1').css('font-size','23px');
-                $('.text-fitter2').css('font-size','14px');
+                $('.text-fitter0').css('font-size','18px');
+                $('.text-fitter1').css({'font-size':'23px','line-height':'35px'});
+                $('.text-fitter2').css({'font-size':'14px','line-height':'24px'});
                 $('.img1_text').css('font-size','28px');
-                $('.img2_text').css({'font-size':'20px','bottom':'450px'});
+                $('.img2_text').css({'font-size':'23px','bottom':'440px'});
                 $('.img3_text').css('font-size','28px');
                 $('.membersImg_text').css('font-size','27px');
                 $('.placeImg_text').css('font-size','27px');
-                $('.text').css('margin','20px 20px 0px 40px');
+                $('.text').css('margin','20px 20px 0px 20px');
                 $('.img2').css('width','500px');
                 $('.place_card_container').css('text-align',"center");
                 $('.content2-cardbox').css('width',"100%");
                 $('.content2-subbox').css('display',"none");
-            }
+                $('.members_h2_link').css({'width':"100%","text-align":"left"});
+            }   
             
             if (width_size >= 1032) {
                 $('.nav-link').css('display','inline');
@@ -219,13 +236,13 @@
             else if( $( this ).scrollTop() >= 2490 && $( this ).scrollTop() < 2800 ){
                 $( '.img2_text' ).fadeIn(1000);
                 $( '.img2' ).animate({
-                    bottom: '40px'
-                });
-                $( '.img2' ).animate({
                     bottom: '20px'
                 });
+                $( '.img2' ).animate({
+                    bottom: '0px'
+                });
                 $( '.img2_background' ).animate({
-                    width: '100%'
+                    width: '0%'
                 });
                 $( '.switch1' ).css('background-color', 'white');
                 $( '.switch2' ).css('background-color', 'white');

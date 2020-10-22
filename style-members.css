@@ -65,11 +65,41 @@
 .members_h2{
     font-weight: 400;
     font-size: 40px; 
-    padding: 50px 0px 24px 10%;
+    padding: 0px 0px 20px 0px;
     line-height: 43px;
     position: relative;
+    display:inline-block;
+    width:40%;
+}
+.members_h2_container{
+    width:90%;
+    padding: 50px 0px 0px 10%;
+    font-weight: 400; 
+    position: relative;
+}
+.members_h2_box{
+    display:inline-block;  
+    position:relative;
+}
+.members_h2_box a{
+    position : relative; 
+    display: inline-block; 
+    font-size:19px; 
+    font-weight: 500; 
+    bottom:18px;
+    margin-right: 15px;
+    color:black;
+}
+.members_h2_box a:hover{
+    color:#ec1d25;
 }
 
+
+.members_h2_link {
+    display:inline-block; 
+    width:50%; 
+    text-align: right;
+}
 
 
 .members_card_container{
@@ -94,7 +124,7 @@
     height:120px;
     position: absolute;
     transform:translate(0%,-50%);
-    top: 40%;
+    top: 45%;
     left: 5%;
 }
 
