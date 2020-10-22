@@ -153,7 +153,7 @@
                 $('.img3_text').css('font-size','40px');
                 $('.membersImg_text').css('font-size','40px');
                 $('.placeImg_text').css('font-size','40px');
-                $('.text').css('margin','30px 30px 0px 50px');
+                $('.text').css('margin','60px 30px 0px 50px');
                 $('.img2').css('width','700px');
                 $('.place_card_container').css('text-align',"left");
                 $('.content2-cardbox').css('width',"100%");
@@ -186,14 +186,14 @@
                 $('.nav-link').css('display','inline');
                 $('.nav-button').css('display','none');
                 $('.background-nav').css('display','none');
-                $('.content2-card-text').css('font-size','17px');
-                $('.content2-card-span').css('font-size','10px');
+                $('.content2-card-text').css('font-size','19px');
+                $('.content2-card-span').css('font-size','13px');
             }
             else{
                 $('.nav-link').css('display','none');
                 $('.nav-button').css('display','inline');
-                $('.content2-card-text').css('font-size','14px');
-                $('.content2-card-span').css('font-size','5px');
+                $('.content2-card-text').css('font-size','13px');
+                $('.content2-card-span').css('font-size','9px');
             }
             if (width_size >=1380){
                 $('.members_card_container').css('text-align','left');
