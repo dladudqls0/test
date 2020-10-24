@@ -101,7 +101,7 @@
 }
 
 .question_mark_div{
-    display: none;
+    display: inline-block;
     top:3px;
     position:relative; 
     border-radius: 70%;
@@ -114,7 +114,7 @@
 
 .question_mark_container{
     position: absolute;
-    display: block;
+    display: none;
     width:120px;
     top:-25px;
     padding:10px;
