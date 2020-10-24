@@ -2,6 +2,7 @@
 
 
     $( document ).ready( function() {
+        $('.question_mark_container').css('display','none');
         var now_page = document.querySelector(".now_page").innerText;
         var temp_scroll;
         //새로고침할때 맨위로
