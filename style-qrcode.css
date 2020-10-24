@@ -90,9 +90,12 @@
 
 
 .qrcode_h2{
+    display: inline-block;
     font-weight: 400;
-    font-size: 40px; 
+    font-size: 40px;
     padding: 50px 0px 24px;
+    box-sizing: border-box;
+    height:130px;
     margin-left:10%;
     position: relative;
 }
@@ -113,10 +116,10 @@
     position: absolute;
     display: block;
     width:120px;
-    top:-10px;
+    top:-25px;
     padding:10px;
     height: 50px;
-    left:150px;
+    right:-55px;
     font-size: 10px;
     background-color: white;
     box-shadow:0px 0px 10px 0px #d3d3d3;
