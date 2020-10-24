@@ -72,7 +72,7 @@
         $( '.question_mark' ).click( function() {
             var temp = $('.question_mark_container').css('display');
             if(temp=="none")
-                $('.question_mark_container').css('display', 'block');
+                $('.question_mark_container').css('display', 'inline-block');
             else
                 $('.question_mark_container').css('display','none');
             return false;
