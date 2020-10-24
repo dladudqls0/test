@@ -129,7 +129,8 @@ nav a:nth-child(n+5){
 
 .footer {
     margin-top:100px;
-    position: absolute;
+    top:3750px;
+    position: static;
     width: 100%;
 }
 
@@ -223,7 +224,6 @@ nav a:nth-child(n+5){
     background-color:white;
     padding: 30px;
     border-top: 0.5px solid rgb(201, 201, 201);
-    height:90px;
 }
 .footerInfo2_img{
     display: inline-block;

@@ -89,57 +89,50 @@
 
 
 
-.question_mark_container{
-    position: absolute;
-    display: block;
-    width:400px;
-    padding:20px;
-    height: 300px;
-    left:100px;
-    bottom:100px;
-    font-size: 21px;
-    background-color: white;
-    border-radius: 20px;
-    border: 2px solid #e05247;
-    color: #e05247;
-}
-.background_question_mark{
-    display:none;
-    position:fixed;
-    width:100%;
-    height:100%;
-    background-color:rgba(163, 163, 163, 0);
-    z-index: 1005;
-    top:0;
+.qrcode_h2{
+    font-weight: 400;
+    font-size: 40px; 
+    padding: 50px 0px 24px;
+    margin-left:10%;
+    position: relative;
 }
 
-
-
-
-
-.question_mark div{
-    position:fixed; 
-    z-index: 1009;
-    bottom:50px; 
-    left:50px; 
+.question_mark_div{
+    display: inline-block;
+    top:3px;
+    position:relative; 
     border-radius: 70%;
     background-color: rgba(0, 0, 0, 0.753);
-    width: 60px;
-    height : 60px;
+    width: 30px;
+    height : 30px;
     text-align: center;
     color:white;
 }
 
-
+.question_mark_container{
+    position: absolute;
+    display: block;
+    width:120px;
+    top:-10px;
+    padding:10px;
+    height: 50px;
+    left:150px;
+    font-size: 10px;
+    background-color: white;
+    box-shadow:0px 0px 10px 0px #d3d3d3;
+    border-radius: 10px;
+    border:0.5px solid rgb(255, 233, 233);
+    color: #000000;
+}
 
 .question_mark span{
     position: absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    font-size:19px;
+    font-size:15px;
 }
-.question_mark div:hover{
+.question_mark_div:hover{
     text-decoration: none;
     background-color: #e05247;
 }
