@@ -1,0 +1,141 @@
+.qrcode_card_container{
+    width:91%;
+    padding: 100px 0px 50px;
+    margin:0 auto;
+    text-align: center;
+}
+.qrcode_card{
+    border-radius: 20px;
+    display:inline-block; 
+    position:relative; 
+    width:200px; 
+    height:245px; 
+    background-color: #ffe2e2; 
+    margin: 0px 16px 50px;
+    text-align: center;
+    border:1px solid #e05247;
+    overflow: hidden;
+}
+.qrcode_card img{
+    width:100%;
+    height:200px;
+    display:block;
+    border-bottom:1px solid #e05247;
+}
+.qrcode_card span{
+    bottom:0px;
+    position: absolute;
+    transform:translate(-50%,-50%);
+    color:#e05247;
+    font-size:1em;
+}
+
+.background-qrcode{
+    display:none;
+    position:fixed;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.960);
+    z-index: 1005;
+    top:0;
+}
+
+.background-qrcode-close{
+    position: absolute;
+    border-radius: 5px;
+    background-color: #e05247;
+    font-size: 30px;
+    bottom: 5%;
+    right:5%;
+    color:white;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+.background-qrcode-close:hover{
+    background-color: #ff5247;
+}
+
+.background-qrcode-container{
+    display:block;
+    position: absolute;
+    transform:translate(-50%,-50%);
+    top:55%;
+    left:50%;
+    width:280px;
+    height:500px;
+    overflow: visible;
+}
+.background-qrcode-container .img_box{
+    border-radius: 20px;
+    width:280px;
+    height:280px;
+    border: 3px solid #e05247;
+    overflow: hidden;
+}
+.background-qrcode-container img{
+    width:100%;
+    height:100%;
+}
+
+.background-qrcode span{
+    position: relative;
+    display: block;
+    width:120%;
+    left:-18px;
+    top:50px;
+    font-size: 27px;
+    color: #ff5247;
+}
+
+
+
+.qrcode_h2{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 40px;
+    padding: 50px 0px 24px;
+    box-sizing: border-box;
+    height:130px;
+    margin-left:10%;
+    position: relative;
+}
+
+.question_mark_div{
+    display: inline-block;
+    top:3px;
+    position:relative; 
+    border-radius: 70%;
+    background-color: rgba(0, 0, 0, 0.753);
+    width: 30px;
+    height : 30px;
+    text-align: center;
+    color:white;
+}
+
+.question_mark_container{
+    position: absolute;
+    display: none;
+    width:120px;
+    top:-25px;
+    padding:10px;
+    height: 50px;
+    right:-55px;
+    font-size: 10px;
+    background-color: white;
+    box-shadow:0px 0px 10px 0px #d3d3d3;
+    border-radius: 10px;
+    border:0.5px solid rgb(255, 233, 233);
+    color: #000000;
+}
+
+.question_mark span{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:15px;
+}
+.question_mark_div:hover{
+    text-decoration: none;
+    background-color: #e05247;
+}
